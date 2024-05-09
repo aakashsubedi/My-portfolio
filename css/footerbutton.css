@@ -32,7 +32,7 @@
 }
 
 .social-wrapper .social-button:nth-child(2):hover .social-icon {
-  background: #1DA1F2;
+  background: #fffafa15;
 }
 
 .social-wrapper .social-button:nth-child(3):hover .social-icon {
@@ -70,7 +70,7 @@
 }
 
 .social-wrapper .social-button:nth-child(2) span {
-  color: #1DA1F2;
+  color: #ffffff;
 }
 
 .social-wrapper .social-button:nth-child(3) span {

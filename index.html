@@ -75,7 +75,7 @@
                 <li><a href="#" style="--navAni:5">Contact</a></li>
             </ul>
 
-            <button class="workbutton">Work with Me</button>
+            <a href="hireMe.html"><button class="workbutton">Work with Me</button></a>
 
         </div>
     </header>
@@ -332,7 +332,7 @@
                     <h1 class="display-5 mb-0">My Services</h1>
                 </div>
                 <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Hire Me</a>
+                    <a class="btn btn-primary py-3 px-5" href="hireMe.html">Hire Me</a>
                 </div>
             </div>
             <div class="row g-4">
@@ -482,58 +482,6 @@
     <!-- Projects End -->
 
 
-    <!-- Team Start -->
-    <!-- <div class="container-xxl py-6 pb-5" id="team">
-        <div class="container">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Team Members</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Contact Us</a>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-1.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-2.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-3.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Team End -->
 
 
     <!-- Testimonial Start -->
@@ -543,7 +491,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-3 d-none d-lg-block">
                     <div class="testimonial-left h-100">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial/testinomial.jpg" alt="">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial/testinomial.jpg"
+                            alt="">
                         <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
                         <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
                     </div>
@@ -622,7 +571,12 @@
                         Together</h1>
                 </div>
                 <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Say Hello</a>
+                    <a class="btn btn-primary py-3 px-5" id="helloButton" href="">Say Hello</a>
+                    <script>
+                        document.getElementById("helloButton").addEventListener("click", function () {
+                            alert("Hello!");
+                        });
+                    </script>
                 </div>
             </div>
             <div class="row g-5">
@@ -638,25 +592,7 @@
                     <hr class="w-100">
                     <p class="mb-2">Follow me on:</p>
                     <div class="d-flex pt-2">
-                        <!-- <ul class="aakash-parsonal-info-social-link mb-30">
-                            <li>
-                                <a href="https://www.facebook.com/aakashsubedi11" class="facebook" target="_blank">
-                                    <i class="fa-brands fa-facebook"></i> </a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/aakashsubedi" class="github" target="_blank">
-                                    <i class="fa-brands fa-github"></i> </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/aakash.subedi11/" class="instagram" target="_blank">
-                                    <i class="fa-brands fa-instagram"></i> </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/aakashsubedi/" class="linkedin" target="_blank">
-                                    <i class="fa-brands fa-linkedin-in"></i>
-                                </a>
-                            </li>
-                        </ul> -->
+
 
 
 
@@ -664,19 +600,24 @@
 
                             <div class="social-button">
                                 <div class="social-icon">
-                                    <i class="fab fa-linkedin"></i>
+                                    <a href="https://www.linkedin.com/in/aakashsubedi" target="_blank"><i
+                                            class="fab fa-linkedin" style="color: white;"></i></a>
                                 </div>
                                 <span>Linkedin</span>
                             </div>
                             <div class="social-button">
                                 <div class="social-icon">
-                                    <i class="fab fa-github"></i>
+                                    <a href="https://github.com/aakashsubedi" target="_blank"
+                                        title="Aakash Subedi's Github Page"><i class="fab fa-github"
+                                            style="color: white;"></i></a>
+
                                 </div>
                                 <span>Github</span>
                             </div>
                             <div class="social-button">
                                 <div class="social-icon">
-                                    <i class="fab fa-instagram"></i>
+                                    <a href="https://www.instagram.com/aakash.subedi11" target="_blank"> <i
+                                            class="fab fa-instagram" style="color: rgb(255, 255, 255);"></i></a>
                                 </div>
                                 <span>Instagram</span>
                             </div>
@@ -733,8 +674,7 @@
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13890.80930487732!2d84.44382055636007!3d27.67290935138095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1715146700690!5m2!1sen!2snp"
                     frameborder="0" style="width: 100%; height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    tabindex="0" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
